@@ -36,6 +36,42 @@
   display: none;
 }
 
+.banner__wrapper {
+  height: 35rem;
+  width: 100%;
+  background: url("/Assets/banner.jpg") no-repeat center center/cover;
+  background-color: var(--light-secondary-color);
+  color: var(--white-color);
+}
+
+.category__card {
+  width: 15rem;
+  height: 15rem;
+  margin: var(--sp-1);
+  cursor: pointer;
+  border-radius: var(--sp-1);
+}
+
+.category__card img {
+  height: 80%;
+  width: 100%;
+  border-radius: var(--sp-1) var(--sp-1) 0 0;
+  object-fit: fill;
+}
+
+.category__card .categogry__name {
+  display: block;
+}
+
+.category__card:hover {
+  box-shadow: var(--box-shadow-2);
+}
+
+footer {
+  height: 4rem;
+  background-color: var(--light-secondary-color);
+}
+
 @media only screen and (max-width: 1024px) {
   .nav__icon__text,
   .hide__mobile {
