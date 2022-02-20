@@ -1,0 +1,10 @@
+.card__vertical__container {
+  margin: var(--sp-1);
+  border-radius: var(--sp-0-5);
+}
+
+.wishlist__wrapper {
+  max-width: 75rem;
+  width: 100%;
+  margin: 0 auto;
+}
