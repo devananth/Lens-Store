@@ -3,6 +3,7 @@
 @import url("/Authentication/authentication.css");
 @import url("/Wishlist/wishlist.css");
 @import url("/ProductListing/productListing.css");
+@import url("/Cart/cart.css");
 
 .d-inline-block {
   display: inline-block;
