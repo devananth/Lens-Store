@@ -28,6 +28,10 @@
   justify-content: space-evenly;
 }
 
+.nav__list__item:hover {
+  color : var(--primary-color)  ;
+}
+
 .nav__link {
   cursor: pointer;
 }
