@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.12.1/css/all.css"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="/style.css" />
+    <title>Cart | Lens-Store</title>
+  </head>
+  <body>
+    <header class="header d-flex col">
+      <nav class="nav__container">
+        <section class="nav__left d-flex gap-2 xy-center">
+          <div class="nav__brand txt-2xl txt-bold mr-1">Lens-Store</div>
+          <span class="txt-lg nav__link hide__mobile">Home</span>
+          <span class="txt-lg nav__link hide__mobile">Shop Now</span>
+        </section>
+        <div class="nav__search__container">
+          <span class="icon nav__search__icon">
+            <i class="fa fa-search"></i>
+          </span>
+          <input
+            class="nav__search"
+            type="search"
+            placeholder="Enter to Search"
+          />
+        </div>
+        <section class="nav__right">
+          <ul class="nav__list">
+            <li class="nav__list__item">
+              <a href="#">
+                <div class="badge-container d-flex col xy-center">
+                  <span class="icon nav__icon">
+                    <i class="fas fa-user"></i>
+                  </span>
+                  <span class="nav__icon__text">Login</span>
+                </div>
+              </a>
+            </li>
+            <li class="nav__list__item">
+              <a href="#">
+                <div class="d-flex col xy-center">
+                  <span class="icon nav__icon badge-container">
+                    <i class="fas fa-heart"></i>
+                    <span class="badge badge-icon d-flex xy-center txt-bold"
+                      >2</span
+                    >
+                  </span>
+
+                  <span class="nav__icon__text">Wishlist</span>
+                </div>
+              </a>
+            </li>
+            <li class="nav__list__item">
+              <a href="#">
+                <div class="d-flex col xy-center">
+                  <span class="icon nav__icon badge-container">
+                    <i class="fas fa-shopping-cart"></i>
+                    <span class="badge badge-icon d-flex xy-center txt-bold"
+                      >2</span
+                    >
+                  </span>
+
+                  <span class="nav__icon__text">Cart</span>
+                </div>
+              </a>
+            </li>
+          </ul>
+        </section>
+      </nav>
+      <div class="nav__search__container mobile__search">
+        <span class="icon nav__search__icon">
+          <i class="fa fa-search"></i>
+        </span>
+        <input
+          class="nav__search"
+          type="search"
+          placeholder="Enter to Search"
+        />
+      </div>
+    </header>
+    <main>
+      <h1 class="h4 txt-center m-1">My Cart (2)</h1>
+      <section class="cart__wrapper d-flex">
+        <section class="cart__products__container d-flex col gap-2">
+          <div class="card__horizontal__container d-flex">
+            <div class="img-container">
+              <img
+                src="/Assets/camera2.jpg"
+                class="card-img img-responsive"
+                alt="camera"
+              />
+            </div>
+            <div class="text-container d-flex flex-1 col gap-1">
+              <p class="txt-lg txt-sbold">Canon EOS 1500D 24.1</p>
+              <div class="d-flex y-center gap-1">
+                <span class="txt-2xl txt-bold">Rs.2999</span>
+                <span class="txt-strike-through">Rs.9999</span>
+                <span class="txt-bold danger">60%</span>
+              </div>
+              <div class="d-flex y-center gap-2">
+                <span class="txt-sbold">Quantity : </span>
+                <button class="quantity__btn">-</button>
+                <span class="quantity__btn">2</span>
+                <button class="quantity__btn">+</button>
+              </div>
+              <div class="d-flex col gap-1">
+                <button class="btn btn-primary width-100">
+                  Remove to Cart
+                </button>
+                <button class="btn btn-primary-outline width-100">
+                  Add to Wishlist
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="card__horizontal__container d-flex">
+            <div class="img-container">
+              <img
+                src="/Assets/cameraSales.jpg"
+                class="card-img img-responsive"
+                alt="camera"
+              />
+            </div>
+            <div class="text-container d-flex flex-1 col gap-1">
+              <p class="txt-lg txt-sbold">Canon EOS 1500D 24.1</p>
+              <div class="d-flex y-center gap-1">
+                <span class="txt-2xl txt-bold">Rs.2999</span>
+                <span class="txt-strike-through">Rs.9999</span>
+                <span class="txt-bold danger">60%</span>
+              </div>
+              <div class="d-flex y-center gap-2">
+                <span class="txt-sbold">Quantity : </span>
+                <button class="quantity__btn">-</button>
+                <span class="quantity__btn">2</span>
+                <button class="quantity__btn">+</button>
+              </div>
+              <div class="d-flex col gap-1">
+                <button class="btn btn-primary width-100">
+                  Remove to Cart
+                </button>
+                <button class="btn btn-primary-outline width-100">
+                  Add to Wishlist
+                </button>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="cart__bill__wrapper d-flex col gap-2">
+          <h4 class="txt-xl txt-bold txt-center pb-sm">PRICE DETAILS</h4>
+          <ul>
+            <li>
+              <span class="txt-lg">Price (2 items)</span>
+              <span>Rs.4999</span>
+            </li>
+            <li>
+              <span class="txt-lg">Discount </span>
+              <span>Rs.1999</span>
+            </li>
+            <li>
+              <span class="txt-lg">Delivery Charges</span>
+              <span>Rs.999</span>
+            </li>
+            <li class="txt-lg txt-bold">
+              <span>Totat Amount</span>
+              <span>Rs.3999</span>
+            </li>
+          </ul>
+          <button class="btn btn-primary width-100 txt-bold">
+            Place Order
+          </button>
+        </section>
+      </section>
+    </main>
+  </body>
+</html>
