@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500&family=Roboto&display=swap");
 @import url("https://lens-ui.netlify.app/style.css");
 @import url("/Authentication/authentication.css");
+@import url("/Wishlist/wishlist.css");
 
 .d-inline-block {
   display: inline-block;
