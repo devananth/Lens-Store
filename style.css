@@ -28,8 +28,16 @@
   justify-content: space-evenly;
 }
 
+.nav__list__item:hover {
+  color : var(--primary-color)  ;
+}
+
 .nav__link {
   cursor: pointer;
+}
+
+.nav__link:hover {
+  border-bottom: 2px solid var(--primary-color);
 }
 
 .mobile__search,
