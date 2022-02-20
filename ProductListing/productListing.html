@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.12.1/css/all.css"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="/style.css" />
+    <title>Products | Lens-Store</title>
+  </head>
+  <body>
+    <header class="header d-flex col">
+      <nav class="nav__container">
+        <section class="nav__left d-flex gap-2 xy-center">
+          <div class="nav__brand txt-2xl txt-bold mr-1">Lens-Store</div>
+          <span class="txt-lg nav__link hide__mobile">Home</span>
+          <span class="txt-lg nav__link hide__mobile">Shop Now</span>
+        </section>
+        <div class="nav__search__container">
+          <span class="icon nav__search__icon">
+            <i class="fa fa-search"></i>
+          </span>
+          <input
+            class="nav__search"
+            type="search"
+            placeholder="Enter to Search"
+          />
+        </div>
+        <section class="nav__right">
+          <ul class="nav__list">
+            <li class="nav__list__item">
+              <a href="#">
+                <div class="badge-container d-flex col xy-center">
+                  <span class="icon nav__icon">
+                    <i class="fas fa-user"></i>
+                  </span>
+                  <span class="nav__icon__text">Login</span>
+                </div>
+              </a>
+            </li>
+            <li class="nav__list__item">
+              <a href="#">
+                <div class="d-flex col xy-center">
+                  <span class="icon nav__icon badge-container">
+                    <i class="fas fa-heart"></i>
+                    <span class="badge badge-icon d-flex xy-center txt-bold"
+                      >2</span
+                    >
+                  </span>
+
+                  <span class="nav__icon__text">Wishlist</span>
+                </div>
+              </a>
+            </li>
+            <li class="nav__list__item">
+              <a href="#">
+                <div class="d-flex col xy-center">
+                  <span class="icon nav__icon badge-container">
+                    <i class="fas fa-shopping-cart"></i>
+                    <span class="badge badge-icon d-flex xy-center txt-bold"
+                      >2</span
+                    >
+                  </span>
+
+                  <span class="nav__icon__text">Cart</span>
+                </div>
+              </a>
+            </li>
+          </ul>
+        </section>
+      </nav>
+      <div class="nav__search__container mobile__search">
+        <span class="icon nav__search__icon">
+          <i class="fa fa-search"></i>
+        </span>
+        <input
+          class="nav__search"
+          type="search"
+          placeholder="Enter to Search"
+        />
+      </div>
+    </header>
+    <main class="d-flex">
+      <section class="product__filter d-flex col gap-3 p-1">
+        <div class="d-flex space-bw xy-center">
+          <span class="txt-2xl txt-bold">Filter</span>
+          <a herf="#" class="txt-underline">Clear All</a>
+        </div>
+        <div class="price_slider">
+          <label class="slide__text txt-lg txt-bold"> Price </label>
+          <input
+            class="slider"
+            type="range"
+            list="steplist"
+            min="500"
+            max="2000"
+            step="500"
+          />
+          <datalist id="steplist">
+            <option value="500">500</option>
+            <option value="1000">1000</option>
+            <option value="1500">1500</option>
+            <option value="2000">2000</option>
+          </datalist>
+        </div>
+        <div class="category__container d-flex col gap-1">
+          <span class="txt-xl txt-bold">Category</span>
+          <div class="form-group">
+            <input type="checkbox" class="form-input" id="dslr" checked />
+            <label class="form-label" for="dslr">DSLR</label>
+          </div>
+          <div class="form-group">
+            <input type="checkbox" class="form-input" id="lens" />
+            <label class="form-label" for="lens">Lens</label>
+          </div>
+          <div class="form-group">
+            <input type="checkbox" class="form-input" id="tripod" />
+            <label class="form-label" for="tripod">Tripod</label>
+          </div>
+          <div class="form-group">
+            <input type="checkbox" class="form-input" id="accessories" />
+            <label class="form-label" for="accessories">Accessories</label>
+          </div>
+        </div>
+        <div class="rating__container d-flex col gap-1">
+          <span class="txt-xl txt-bold">Rating</span>
+          <div class="form-group">
+            <input type="radio" class="form-input" for="dslr" />
+            <label class="form-label" id="dslr">4 Stars & above</label>
+          </div>
+          <div class="form-group">
+            <input type="radio" class="form-input" />
+            <label class="form-label">3 stars & above</label>
+          </div>
+          <div class="form-group">
+            <input type="radio" class="form-input" />
+            <label class="form-label">2 stars & above</label>
+          </div>
+          <div class="form-group">
+            <input type="radio" class="form-input" />
+            <label class="form-label">1 stars & above</label>
+          </div>
+        </div>
+        <div class="sortby__container d-flex col gap-1">
+          <span class="txt-xl txt-bold mb-sm">Sort by</span>
+          <div class="form-group">
+            <input type="radio" class="form-input" />
+            <label class="form-label">Price - Low to High</label>
+          </div>
+          <div class="form-group">
+            <input type="radio" class="form-input" />
+            <label class="form-label">Price - High to Low</label>
+          </div>
+        </div>
+      </section>
+      <section class="products__container flex-1 m-1">
+        <h5 class="txt-xl txt-bold mb-1">
+          Showing All Products
+          <span class="txt-lg txt-regular">( showing 12 products )</span>
+        </h5>
+        <section class="products__wrapper d-flex wrap">
+          <div class="card__vertical__container d-flex col box-shadow">
+            <span class="txt-badge rounded card__badge">New Offer</span>
+            <div class="card__icon">
+              <i class="fas fa-heart fa" aria-hidden="true"></i>
+            </div>
+
+            <img
+              src="/Assets/camera.jpg"
+              alt="camera"
+              class="img-responsive card-img"
+            />
+
+            <div class="text-container flex-1 d-flex col">
+              <span class="txt-base txt-bold">DSLR</span>
+              <span class="flex-1 txt-base txt-sbold">
+                Canon EOS 1500D 24.1 Digital SLR Camera (Black) with EF S18-55
+                is II Lens
+              </span>
+              <div class="d-flex y-center gap-1">
+                <span class="txt-2xl txt-bold">Rs.2999</span>
+                <span class="txt-strike">Rs.9999</span>
+                <span class="txt-bold danger">60%</span>
+              </div>
+              <div>
+                <button class="btn btn-primary">Add to Cart</button>
+              </div>
+            </div>
+          </div>
+          <div class="card__vertical__container d-flex col box-shadow">
+            <span class="txt-badge rounded card__badge">New Offer</span>
+            <div class="card__icon">
+              <i class="fas fa-heart fa" aria-hidden="true"></i>
+            </div>
+
+            <img
+              src="/Assets/camera2.jpg"
+              alt="camera"
+              class="img-responsive card-img"
+            />
+
+            <div class="text-container flex-1 d-flex col">
+              <span class="txt-base txt-bold">DSLR</span>
+              <span class="flex-1 txt-base txt-sbold">
+                Canon EOS 1500D 24.1 Digital SLR Camera (Black) with EF S18-55
+                is II Lens
+              </span>
+              <div class="d-flex y-center gap-1">
+                <span class="txt-2xl txt-bold">Rs.2999</span>
+                <span class="txt-strike">Rs.9999</span>
+                <span class="txt-bold danger">60%</span>
+              </div>
+              <div>
+                <button class="btn btn-primary">Add to Cart</button>
+              </div>
+            </div>
+          </div>
+          <div class="card__vertical__container d-flex col box-shadow">
+            <span class="txt-badge rounded card__badge">New Offer</span>
+            <div class="card__icon">
+              <i class="fas fa-heart fa" aria-hidden="true"></i>
+            </div>
+
+            <img
+              src="/Assets/cameraSales.jpg"
+              alt="camera"
+              class="img-responsive card-img"
+            />
+
+            <div class="text-container flex-1 d-flex col">
+              <span class="txt-base txt-bold">DSLR</span>
+              <span class="flex-1 txt-base txt-sbold">
+                Canon EOS 1500D 24.1 Digital SLR Camera (Black) with EF S18-55
+                is II Lens
+              </span>
+              <div class="d-flex y-center gap-1">
+                <span class="txt-2xl txt-bold">Rs.2999</span>
+                <span class="txt-strike">Rs.9999</span>
+                <span class="txt-bold danger">60%</span>
+              </div>
+              <div>
+                <button class="btn btn-primary">Add to Cart</button>
+              </div>
+            </div>
+          </div>
+          <div class="card__vertical__container d-flex col box-shadow">
+            <span class="txt-badge rounded card__badge">New Offer</span>
+            <div class="card__icon">
+              <i class="fas fa-heart fa" aria-hidden="true"></i>
+            </div>
+
+            <img
+              src="/Assets/camera.jpg"
+              alt="camera"
+              class="img-responsive card-img"
+            />
+
+            <div class="text-container flex-1 d-flex col">
+              <span class="txt-base txt-bold">DSLR</span>
+              <span class="flex-1 txt-base txt-sbold">
+                Canon EOS 1500D 24.1 Digital SLR Camera (Black) with EF S18-55
+                is II Lens
+              </span>
+              <div class="d-flex y-center gap-1">
+                <span class="txt-2xl txt-bold">Rs.2999</span>
+                <span class="txt-strike">Rs.9999</span>
+                <span class="txt-bold danger">60%</span>
+              </div>
+              <div>
+                <button class="btn btn-primary">Add to Cart</button>
+              </div>
+            </div>
+          </div>
+          <div class="card__vertical__container d-flex col box-shadow">
+            <span class="txt-badge rounded card__badge">New Offer</span>
+            <div class="card__icon">
+              <i class="fas fa-heart fa" aria-hidden="true"></i>
+            </div>
+
+            <img
+              src="/Assets/camera2.jpg"
+              alt="camera"
+              class="img-responsive card-img"
+            />
+
+            <div class="text-container flex-1 d-flex col">
+              <span class="txt-base txt-bold">DSLR</span>
+              <span class="flex-1 txt-base txt-sbold">
+                Canon EOS 1500D 24.1 Digital SLR Camera (Black) with EF S18-55
+                is II Lens
+              </span>
+              <div class="d-flex y-center gap-1">
+                <span class="txt-2xl txt-bold">Rs.2999</span>
+                <span class="txt-strike">Rs.9999</span>
+                <span class="txt-bold danger">60%</span>
+              </div>
+              <div>
+                <button class="btn btn-primary">Add to Cart</button>
+              </div>
+            </div>
+          </div>
+          <div class="card__vertical__container d-flex col box-shadow">
+            <span class="txt-badge rounded card__badge">New Offer</span>
+            <div class="card__icon">
+              <i class="fas fa-heart fa" aria-hidden="true"></i>
+            </div>
+
+            <img
+              src="/Assets/cameraSales.jpg"
+              alt="camera"
+              class="img-responsive card-img"
+            />
+
+            <div class="text-container flex-1 d-flex col">
+              <span class="txt-base txt-bold">DSLR</span>
+              <span class="flex-1 txt-base txt-sbold">
+                Canon EOS 1500D 24.1 Digital SLR Camera (Black) with EF S18-55
+                is II Lens
+              </span>
+              <div class="d-flex y-center gap-1">
+                <span class="txt-2xl txt-bold">Rs.2999</span>
+                <span class="txt-strike">Rs.9999</span>
+                <span class="txt-bold danger">60%</span>
+              </div>
+              <div>
+                <button class="btn btn-primary">Add to Cart</button>
+              </div>
+            </div>
+          </div>
+          <div class="card__vertical__container d-flex col box-shadow">
+            <span class="txt-badge rounded card__badge">New Offer</span>
+            <div class="card__icon">
+              <i class="fas fa-heart fa" aria-hidden="true"></i>
+            </div>
+
+            <img
+              src="/Assets/camera.jpg"
+              alt="camera"
+              class="img-responsive card-img"
+            />
+
+            <div class="text-container flex-1 d-flex col">
+              <span class="txt-base txt-bold">DSLR</span>
+              <span class="flex-1 txt-base txt-sbold">
+                Canon EOS 1500D 24.1 Digital SLR Camera (Black) with EF S18-55
+                is II Lens
+              </span>
+              <div class="d-flex y-center gap-1">
+                <span class="txt-2xl txt-bold">Rs.2999</span>
+                <span class="txt-strike">Rs.9999</span>
+                <span class="txt-bold danger">60%</span>
+              </div>
+              <div>
+                <button class="btn btn-primary">Add to Cart</button>
+              </div>
+            </div>
+          </div>
+          <div class="card__vertical__container d-flex col box-shadow">
+            <span class="txt-badge rounded card__badge">New Offer</span>
+            <div class="card__icon">
+              <i class="fas fa-heart fa" aria-hidden="true"></i>
+            </div>
+
+            <img
+              src="/Assets/camera2.jpg"
+              alt="camera"
+              class="img-responsive card-img"
+            />
+
+            <div class="text-container flex-1 d-flex col">
+              <span class="txt-base txt-bold">DSLR</span>
+              <span class="flex-1 txt-base txt-sbold">
+                Canon EOS 1500D 24.1 Digital SLR Camera (Black) with EF S18-55
+                is II Lens
+              </span>
+              <div class="d-flex y-center gap-1">
+                <span class="txt-2xl txt-bold">Rs.2999</span>
+                <span class="txt-strike">Rs.9999</span>
+                <span class="txt-bold danger">60%</span>
+              </div>
+              <div>
+                <button class="btn btn-primary">Add to Cart</button>
+              </div>
+            </div>
+          </div>
+          <div class="card__vertical__container d-flex col box-shadow">
+            <span class="txt-badge rounded card__badge">New Offer</span>
+            <div class="card__icon">
+              <i class="fas fa-heart fa" aria-hidden="true"></i>
+            </div>
+
+            <img
+              src="/Assets/cameraSales.jpg"
+              alt="camera"
+              class="img-responsive card-img"
+            />
+
+            <div class="text-container flex-1 d-flex col">
+              <span class="txt-base txt-bold">DSLR</span>
+              <span class="flex-1 txt-base txt-sbold">
+                Canon EOS 1500D 24.1 Digital SLR Camera (Black) with EF S18-55
+                is II Lens
+              </span>
+              <div class="d-flex y-center gap-1">
+                <span class="txt-2xl txt-bold">Rs.2999</span>
+                <span class="txt-strike">Rs.9999</span>
+                <span class="txt-bold danger">60%</span>
+              </div>
+              <div>
+                <button class="btn btn-primary">Add to Cart</button>
+              </div>
+            </div>
+          </div>
+        </section>
+      </section>
+    </main>
+  </body>
+</html>
