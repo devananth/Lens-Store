@@ -9,14 +9,9 @@
   height: 100%;
 }
 
-.card__horizontal__container {
-  max-width: 30rem;
+.card__horizontal__container{
   box-shadow: var(--box-shadow-2);
-  border-radius: 5px;
-}
-
-.text-container {
-  padding: var(--sp-0-5);
+  height: max-content;
 }
 
 .card__horizontal__container .img-container {
@@ -24,6 +19,12 @@
   padding: var(--sp-0-25);
   flex-shrink: 0;
 }
+
+.card__horizontal__container .quantity__btn {
+  border: 1px solid var(--light-secondary-color);
+  padding: var(--sp-0-25) var(--sp-1);
+}
+
 .card__horizontal__container .card-img {
   max-inline-size: 100%;
   object-fit: fill;
